@@ -1,0 +1,261 @@
+/* 1 --TYPOGRAPHY SYSTEM
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+
+
+
+FONT WIGHTS :
+default = 1
+500
+600
+700
+LINE HIGHT :
+ default = 1
+  2-- COLORS 
+  -PRIMARY #e67e22
+  -Taints:
+    #fdf2e9
+  #fae5d3
+  -shades:#cf711f
+    background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+
+  -greys:
+  #6f6f6f;
+  #555
+  #333
+  
+  --05 shadows
+  
+  --06 border-radius
+    9px
+  --07 whitespace
+   SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    /* scroll-behavior: smooth; */
+}
+
+body {
+    /* background-color: red; */
+    font-family: 'Rubik', sans-serif;
+    line-height: 1;
+    font-weight: 500;
+    color: #555;
+    overflow-x: hidden;
+}
+
+
+/* General components */
+
+
+/* ********************** */
+
+*:focus {
+    outline: none;
+    /* outline: 4px dotted #e67e22; */
+    /* outline-offset: 8px; */
+    box-shadow: 0 0 0 0.8rem #c4610c8a;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+    font-weight: 700;
+    color: #333;
+    /* color: #343a40; */
+    letter-spacing: -0.5px;
+}
+
+.heading-primary {
+    font-size: 5.2rem;
+    line-height: 1.05;
+    margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+    font-size: 4.4rem;
+    line-height: 1.2;
+    margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+    text-transform: capitalize;
+}
+
+.subheading {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #cf711f;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.75px;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+    font-size: 2rem;
+    padding: 1.6rem 3.2rem;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 0.9rem;
+    -webkit-border-radius: 0.9rem;
+    -moz-border-radius: 0.9rem;
+    -ms-border-radius: 0.9rem;
+    -o-border-radius: 0.9rem;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn-form {
+    background-color: #45260a;
+    color: #fdf2e9;
+    align-self: end;
+    padding: 1.2rem;
+}
+
+.btn-form:hover {
+    background-color: #fff;
+    color: #555;
+}
+
+.start:link,
+.start:visited {
+    background-color: #e67e22;
+    color: #fff;
+}
+
+.start:hover,
+.start:active {
+    background-color: #cf711f;
+}
+
+.learn:link,
+.learn:visited {
+    background-color: #fff;
+    color: #555;
+}
+
+.learn:hover,
+.learn:active {
+    background-color: #fdf2e9;
+    /* border: 3px solid #fff; */
+    box-shadow: inset 0 0 0 3px #fff;
+}
+
+.link:link,
+.link:visited {
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    display: inline-block;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+    color: #cf711f;
+    border-bottom: 1px solid transparent;
+}
+
+.margin-right-sm {
+    margin-right: 1.6rem !important;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+.grid {
+    display: grid;
+    row-gap: 9.6rem;
+    column-gap: 6.4rem;
+}
+
+.grid-2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-5-cols {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-algin-center {
+    align-items: center;
+}
+
+.grid:not(:last-child) {
+    margin-bottom: 9.6rem;
+}
+
+strong {
+    font-weight: 500;
+}
+
+.margin-bottom-md {
+    margin-bottom: 4.8rem !important;
+}
+
+.center {
+    text-align: center;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.icon-list {
+    width: 3rem;
+    height: 3rem;
+    color: #e67e22;
+}
+
+.list-item {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    line-height: 1.8;
+}
+
+
+/* ********************** */
